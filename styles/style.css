@@ -22,7 +22,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 2rem;
+  color: var(--neutralDark);
 }
 
 h2 {
@@ -37,13 +38,13 @@ h4 {
   font-size: 24px;
 }
 
-.bodyIntro24 {
+.bodyMedium {
   font-size: 20px;
   font-weight: 500;
 }
 
-.bodyIntro20 {
-  font-size: 20px;
+.bodyRegular {
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
@@ -69,20 +70,25 @@ h4 {
 
 .container {
   max-width: 1200px;
-  padding: 15px 0;
+  padding: 15px 15px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.primaryButton {
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  padding: 15px 36px;
 }
 
 nav {
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
-  padding: 16px 32px;
 }
 
 .hamburger {
@@ -176,6 +182,7 @@ nav {
 }
 
 #contactButton {
+  display: none;
   color: white;
   background-color: var(--primary);
   border: none;
@@ -183,6 +190,9 @@ nav {
 }
 
 @media (min-width: 768px) {
+  #contactButton {
+    display: block;
+  }
   .hamburger {
     display: none;
   }
@@ -190,4 +200,81 @@ nav {
     display: flex;
     color: var(--neutralDark);
   }
+  .container {
+    justify-content: center;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .imgHero {
+    width: 50%;
+    height: 60vh;
+    background-image: url(../images/hero-section/hero-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .cta {
+    width: 40%;
+    height: 60vh;
+    /* justify-content: center; */
+    /* align-content: space-between; */
+    /* padding-left: 2rem; */
+    /* width: 90%; */
+    /* height: 20vh; */
+  }
+}
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgHero {
+  width: 90%;
+  height: 50vh;
+  background-image: url(../images/hero-section/hero-image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cta p {
+  color: var(--neutralMedium);
+  margin: 1rem 0;
+}
+.cta a {
+  text-decoration: none;
+  color: var(--neutralMedium);
+  margin-left: 1.5rem;
+}
+
+.Hero--card__up {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.Hero--card__down {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  justify-items: flex-end;
+}
+
+.card_image {
+  width: 190px;
 }/*# sourceMappingURL=style.css.map */
