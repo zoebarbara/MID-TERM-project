@@ -1,0 +1,193 @@
+:root {
+  --primary: #072AC8;
+  --accent: #43D2FF;
+  --primaryHover: #A2D6F9;
+  --primaryTapped: D1EDFF;
+  --neutralDark: #292E47;
+  --neutralMedium: #6B708D;
+  --neutralLight: #F2F4FC;
+  --neutralLightBlue: #ECF7FF;
+  --secondary: #FFC600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+.bodyIntro24 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.bodyIntro20 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.headLineReg {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.headLineMed {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.caption1 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.caption2 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 15px 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 16px 32px;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: realtive;
+  background-color: var(--neutralDark);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  z-index: 1;
+  transform-origin: 0 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  background-color: var(--primary);
+}
+
+.hamburger.is-active span:nth-child(1) {
+  transform: translate(0px, -2px) rotate(45deg);
+  -webkit-transform: translate(0px, -2px) rotate(45deg);
+  -moz-transform: translate(0px, -2px) rotate(45deg);
+  -ms-transform: translate(0px, -2px) rotate(45deg);
+  -o-transform: translate(0px, -2px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(15px);
+  -webkit-transform: translateX(15px);
+  -moz-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  -o-transform: translateX(15px);
+}
+
+.hamburger.is-active span:nth-child(3) {
+  transform: translate(-3px, 3px) rotate(-45deg);
+  -webkit-transform: translate(-3px, 3px) rotate(-45deg);
+  -moz-transform: translate(-3px, 3px) rotate(-45deg);
+  -ms-transform: translate(-3px, 3px) rotate(-45deg);
+  -o-transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+.hamburger.is-active:hover span {
+  background-color: var(--primary);
+}
+
+.menu {
+  display: none;
+  flex: 1 1 0%;
+  justify-content: center;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--neutralMedium);
+  padding: 0 25px;
+}
+.menu .isActive {
+  color: var(--primary);
+}
+
+#contactButton {
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  padding: 15px 36px;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    color: var(--neutralDark);
+  }
+}/*# sourceMappingURL=style.css.map */
