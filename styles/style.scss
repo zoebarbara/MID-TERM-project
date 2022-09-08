@@ -22,7 +22,7 @@ h1, h2, h3, h4 { font-weight: 700;}
 
 h1 {font-size: 3rem; color: var(--neutralDark);}
 h2 {font-size: 2.7rem;}
-h3 {font-size: 2.5rem;}
+h3 {font-size: 2.5rem; color: var(--neutralDark)}
 h4 {font-size: 1.5rem;}
 
 .bodyMedium {
@@ -207,10 +207,6 @@ nav {
 //       Header
 //****************************
 
-//header {
-    //height: 85vh;
-    //@media (min-width: 768px) {height: unset;}
-//}
 .hero {
     width: 100%;
     display: flex;
@@ -294,7 +290,12 @@ nav {
 //     BODY
 //****************
 
-// Logos Section
+
+.container--column h3{
+    width: 90%;
+    text-align: left;
+    color: var(--neutralDark);
+}
 
 .container article{
     display: none;
@@ -320,7 +321,6 @@ nav {
     max-width: 1200px;
     padding: 15px 15px;
     margin: 1.5rem auto;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,7 +367,6 @@ nav {
         padding: 2rem;
 
         .bodyMedium { color: var(--neutralDark);}
-        
         p {color: var(--neutralMedium);}
 
         a {
