@@ -400,7 +400,6 @@ nav {
 
 .testimonials {
     width: 100%;
-    height: 70vh;
     padding: 3rem;
     background: url(../images/testimonial-section/orbit.png) var(--neutralDark);
     background-size: contain;
@@ -408,6 +407,7 @@ nav {
     background-position: center center;
     display: flex;
     flex-direction: column;
+        
 
     .testimonials--upper {
         @media (min-width: 768px){
@@ -426,8 +426,9 @@ nav {
     .testimonial--emoji {
         display: none;
         @media (min-width: 768px){
-            height: auto;
             display:inline-block;
+            width: 12%;
+            height: 12%;
         }
     }
 
