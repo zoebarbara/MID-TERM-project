@@ -129,13 +129,16 @@ nav {
 
 }
 
-.hamburger:hover span:nth-child(2){
+.hamburger span:nth-child(2){
+    position: relative;
+    &:hover {
     transform: translateX(10px);
     -webkit-transform: translateX(10px);
     -moz-transform: translateX(10px);
     -ms-transform: translateX(10px);
     -o-transform: translateX(10px);
     background-color: var(--primary);
+    }
 }
 
 .hamburger.is-active span:nth-child(1) {
@@ -426,7 +429,7 @@ nav {
     .testimonial--emoji {
         display: none;
         @media (min-width: 768px){
-            display:inline-block;
+            display:inline;
             width: 12%;
             height: 12%;
         }

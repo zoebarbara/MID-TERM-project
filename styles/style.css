@@ -139,7 +139,10 @@ nav {
   }
 }
 
-.hamburger:hover span:nth-child(2) {
+.hamburger span:nth-child(2) {
+  position: relative;
+}
+.hamburger span:nth-child(2):hover {
   transform: translateX(10px);
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
@@ -418,7 +421,7 @@ nav {
 }
 @media (min-width: 768px) {
   .testimonials .testimonial--emoji {
-    display: inline-block;
+    display: inline;
     width: 12%;
     height: 12%;
   }
