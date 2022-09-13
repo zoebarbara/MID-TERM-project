@@ -2,82 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Circle</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Circle</title>
 </head>
 
 <body>
+  <div class="narrowContainer">
     <header>
-        <nav>
-            <div class="container">
-                <img src="./images/logos/circle.svg" alt="circle logo">
-                <!-- <div class="logo">Circle</div> -->
 
-                <div class="menu">
-                    <a href="./index.html" class="isActive">Home</a>
-                    <a href="./projects.html">Projects</a>
-                    <a href="./services.html">Services</a>
-                </div>
+      <!-- RESPONSIVE BURGER MENU -->
+      <nav>
+        <!-- <div class="container"> -->
+        <img src="./images/logos/circle.svg" alt="circle logo">
 
-                <input id="contactButton" type="button" value="Contact">
+        <div class="menu">
+          <a href="./index.html" class="isActive">Home</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./services.html">Services</a>
+        </div>
+
+        <input id="contactButton" type="button" value="Contact">
 
 
-                <button class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </nav>
-    </header>
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- </div> -->
+      </nav>
+      <!-- FORM -->
 
-    <!-- FORM -->
+      <div class="contactSection">
 
-    <div class="contactSection">
-        <h1>Contact Us</h1>
         <div class="form">
-            <form action="#">
-                <label for="name">Full Name *</label><br>
-                <input type="text" id="name" name="name" value="Enter your full name" required>
+          <h1>Contact Us</h1><br>
+          <form action="#">
+            <label for="name">Full Name *</label><br>
+            <input type="text" id="name" name="name" value="Enter your full name" required>
+            <div class="innerForm">
+              <div class="innerForm--colum">
                 <label for="email">Email</label><br>
                 <input type="text" id="email" name="email" value="Enter your email address" required><br>
-                <label for="phon">Phone</label><br>
+              </div>
+              <div class="innerForm--colum">
+                <label for="phone">Phone</label><br>
                 <input type="text" id="phone" name="phone" value="Enter your phone" required><br>
-                <label for="message">Message</label><br>
-                <input type="text" id="phone" name="phone" value="Enter your message" required><br>
-                <input type="submit" value="Submit">
-            </form>
+              </div>
+            </div>
+            <label for="message">Message</label><br>
+            <input type="text" id="phone" name="phone" value="Enter your message" required><br>
+            <input type="submit" value="Submit">
+          </form>
         </div>
-    </div>
+      </div>
 
 
-    <footer>
+      <footer>
         <div class="upperFooter">
-            <img src="./images/logos/circle.svg" alt="">
-            <p>2972 Westheimer Rd. Santa Ana<br> Illinois 85486 </p>
+          <img src="./images/logos/circle.svg" alt="">
+          <p>2972 Westheimer Rd. Santa Ana<br> Illinois 85486 </p>
         </div>
 
         <div class="bottomFooter">
-            <div>
-                <p>Team</p>
-                <p>Press</p>
-                <p>Services</p>
-            </div>
-            <div>
-                <p>About Us</p>
-                <p>Privacy Policy</p>
-                <p>Projects</p>
-            </div>
+          <div>
+            <p>Team</p>
+            <p>Press</p>
+            <p>Services</p>
+          </div>
+          <div>
+            <p>About Us</p>
+            <p>Privacy Policy</p>
+            <p>Projects</p>
+          </div>
         </div>
-    </footer>
+      </footer>
 
-    <script src="main.js"></script>
+      <script src="main.js"></script>
 </body>
 
 </html>

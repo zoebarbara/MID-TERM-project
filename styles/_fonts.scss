@@ -1,0 +1,40 @@
+@use 'color';
+
+h1, h2, h3, h4 { font-weight: 700;}
+
+h1 {font-size: 3rem; 
+  color: color.$neutralDark;
+}
+h2 {font-size: 2.7rem;}
+h3 {font-size: 2.5rem; color: color.$neutralDark}
+h4 {font-size: 1.5rem;}
+
+.bodyMedium {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.bodyRegular {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.headLineReg {
+    font-size: 1.063rem;
+    font-weight: 400;
+}
+
+.headLineMed {
+    font-size: 1.063rem;
+    font-weight: 500;
+}
+
+.caption1 {
+    font-weight: 400;
+    font-size: 0.938rem;
+}
+
+.caption2 {
+    font-size: 0.813rem;
+    font-weight: 400;
+}
