@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,14 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Circle</title>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="container">
                 <img src="./images/logos/circle.svg" alt="circle logo">
                 <!-- <div class="logo">Circle</div> -->
-                
+
                 <div class="menu">
                     <a href="./index.html" class="isActive">Home</a>
                     <a href="./projects.html">Projects</a>
@@ -24,7 +26,7 @@
                 </div>
 
                 <input id="contactButton" type="button" value="Contact">
-            
+
 
                 <button class="hamburger" id="hamburger">
                     <span></span>
@@ -33,17 +35,34 @@
                 </button>
             </div>
         </nav>
-    </header> 
+    </header>
 
-<!-- FORM -->
-<h1>HOLIIII</h1>
+    <!-- FORM -->
+
+    <div class="contactSection">
+        <h1>Contact Us</h1>
+        <div class="form">
+            <form action="#">
+                <label for="name">Full Name *</label><br>
+                <input type="text" id="name" name="name" value="Enter your full name" required>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" value="Enter your email address" required><br>
+                <label for="phon">Phone</label><br>
+                <input type="text" id="phone" name="phone" value="Enter your phone" required><br>
+                <label for="message">Message</label><br>
+                <input type="text" id="phone" name="phone" value="Enter your message" required><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
 
     <footer>
         <div class="upperFooter">
             <img src="./images/logos/circle.svg" alt="">
             <p>2972 Westheimer Rd. Santa Ana<br> Illinois 85486 </p>
         </div>
-        
+
         <div class="bottomFooter">
             <div>
                 <p>Team</p>
@@ -60,4 +79,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>
