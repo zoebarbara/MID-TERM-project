@@ -70,7 +70,6 @@ h4 {
 }
 
 .container {
-  max-width: 1200px;
   padding: 15px 15px;
   margin: 2rem;
   display: flex;
@@ -292,10 +291,18 @@ nav {
   width: 190px;
 }
 
+.container--column {
+  width: 97%;
+}
 .container--column h3 {
   width: 90%;
   text-align: left;
   color: var(--neutralDark);
+}
+@media (min-width: 768px) {
+  .container--column h3 {
+    width: 100%;
+  }
 }
 
 .container article {
@@ -315,7 +322,6 @@ nav {
 }
 
 .container--column {
-  max-width: 1200px;
   padding: 15px 15px;
   margin: 1.5rem auto;
   display: flex;
@@ -337,7 +343,6 @@ nav {
 }
 @media (min-width: 768px) {
   .projectSection {
-    width: 90%;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -355,7 +360,7 @@ nav {
   .project {
     width: 30%;
     justify-content: space-between;
-    height: 40vw;
+    height: 60vh;
   }
 }
 .project img {
@@ -443,6 +448,7 @@ nav {
 .testimonials .testimonial--p {
   color: var(--secondary);
   text-align: center;
+  font-size: 2rem;
 }
 @media (min-width: 768px) {
   .testimonials .testimonial--p {
@@ -494,6 +500,11 @@ nav {
   justify-content: center;
   align-content: center;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .ctaForm {
+    height: 40vh;
+  }
 }
 .ctaForm h3, .ctaForm p {
   color: var(--neutralDark);
@@ -595,4 +606,64 @@ footer .bottomFooter div {
     justify-content: space-evenly;
     margin: 5% 0;
   }
+}
+
+.mainProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainProject .mainProject--container {
+  width: 90%;
+}
+.mainProject h1 {
+  width: 100%;
+  text-align: left;
+}
+.mainProject p {
+  color: var(--neutralMedium);
+  margin: 0.2rem;
+}
+.mainProject .mainProject--subtitle {
+  display: flex;
+  flex-direction: column;
+}
+.mainProject .mainProject--img {
+  width: 100%;
+}
+.mainProject .mainProject--p {
+  color: var(--neutralMedium);
+  margin-top: 20px;
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactSection h1 {
+  width: 100%;
+  text-align: left;
+}
+
+.form {
+  width: 80%;
+}
+.form label {
+  color: var(--neutralMedium);
+}
+.form input {
+  width: 100%;
+  border: none;
+  color: var(--neutralMedium);
+  background: rgba(107, 112, 141, 0.1);
+  padding: 1.5rem;
+  margin: 0.7rem 0;
+}
+.form input[type=submit] {
+  color: white;
+  background-color: var(--primary);
 }/*# sourceMappingURL=style.css.map */
