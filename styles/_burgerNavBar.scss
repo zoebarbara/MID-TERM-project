@@ -58,14 +58,14 @@ nav {
 .hamburger span:nth-child(2) {
   position: relative;
 
-  &:hover {
-    transform: translateX(10px);
-    -webkit-transform: translateX(10px);
-    -moz-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    -o-transform: translateX(10px);
-    background-color: color.$primary;
-  }
+  // &:hover {
+  //   transform: translateX(10px);
+  //   -webkit-transform: translateX(10px);
+  //   -moz-transform: translateX(10px);
+  //   -ms-transform: translateX(10px);
+  //   -o-transform: translateX(10px);
+  //   background-color: color.$primary;
+  // }
 }
 
 .hamburger.is-active span:nth-child(1) {
@@ -122,12 +122,57 @@ nav {
 
 #contactButton {
   display: none;
+  text-decoration: none;
   color: color.$white;
   background-color: color.$primary;
   border: none;
   padding: 15px 36px;
 
+  &:hover {
+    background-color: color.$primaryHover;
+    cursor: pointer;
+  }
+
   @media (min-width: 768px) {
     display: block;
   }
 }
+
+
+.mobileMenu {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  border-top:  1px solid lightgray;
+  
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hiddenMenu {
+  display: none;
+}
+
+.mobileMenu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #6B708D;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    &:hover {
+      background-color: color.$primary;
+      color: color.$white;
+    }
+}
+
+
