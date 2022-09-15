@@ -24,8 +24,6 @@ const userNameValidation = () => {
   let valid = false;
   const min = 3;
   const max = 40;
-
-
 }
 
 //FETCH
@@ -68,5 +66,5 @@ if(form){
     .then((response) => response.json())
     .then((output) => console.log(output))
     .catch((error) => console.log("Something went wrong.", error))
-    //.finally(() => reserForm());
+    .finally(() => alarm('El formulario se ha enviado correctamente'));
 })}
