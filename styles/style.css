@@ -106,14 +106,6 @@ nav {
 .hamburger span:nth-child(2) {
   position: relative;
 }
-.hamburger span:nth-child(2):hover {
-  transform: translateX(10px);
-  -webkit-transform: translateX(10px);
-  -moz-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  -o-transform: translateX(10px);
-  background-color: #072AC8;
-}
 
 .hamburger.is-active span:nth-child(1) {
   transform: translate(0px, -2px) rotate(45deg);
