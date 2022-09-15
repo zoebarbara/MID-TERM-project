@@ -1,5 +1,9 @@
 const hamburger = document.querySelector('.hamburger');
 
+hamburger.addEventListener('click', function () {
+  this.classList.toggle('is-active');
+});
+
 hamburger.addEventListener('click', () => {
   const mobileMenu =  document.querySelector('#mobileMenu')
   mobileMenu.classList.toggle("hiddenMenu");
